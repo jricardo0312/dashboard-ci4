@@ -18,9 +18,11 @@
     <?= $this->include('partials/navbar') ?>
     
     <div class="columns is-variable is-0">
-        <?= $this->include('partials/sidebar') ?>
+        <div class="sidebar-container">
+            <?= $this->include('partials/sidebar') ?>
+        </div>
         
-        <div class="column is-10-desktop is-offset-2-desktop is-9-tablet is-offset-3-tablet is-12-mobile">
+        <div id="main-content" class="column is-10-desktop is-offset-2-desktop is-9-tablet is-offset-3-tablet is-12-mobile">
             <div class="p-1">
                 <?= $this->renderSection('content') ?>
             </div>

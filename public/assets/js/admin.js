@@ -5,7 +5,8 @@ import './style.css';
 
 $(document).ready(function() {
   $(".toggler").on("click", function() {
-    $(".menu-container").toggleClass("active");
+    $(".sidebar-container").toggleClass("collapsed");
+    $("#main-content").toggleClass("collapsed");
   });
 
   $(".nav-toggler").on("click", function() {
